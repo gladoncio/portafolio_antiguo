@@ -1,0 +1,167 @@
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    
+  }
+  .imagen{
+    margin: auto;
+    padding:13px;
+    width:550px;
+    height:400px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(/static/img/logo.png);
+    background-size: cover;
+  }
+
+.formulario{
+  padding: 0 35vh 10vh 35vh;
+  
+}
+
+
+
+.boton{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.boton:hover {
+  background: #868686;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #949494,
+              0 0 25px #999999,
+              0 0 50px rgb(165, 165, 165),
+              0 0 100px #a2a2a2;
+}
+
+
+.boton span {
+  position: absolute;
+  display: block;
+}
+
+.boton span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.boton span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #000000);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.boton span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #000000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.boton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+.titulo{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.tabla{
+
+  padding: 0 10vh 10vh 10vh;
+}
+
+.notificacion{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: larger;
+  text-align: center;
+  background-color: #e83283;
+  color: #fff;
+  width: 100%;
+}
+
+.buscar{
+  padding-bottom: 20px;
+  display: inline-block;
+  
+  
+  
+}
+
+h3{
+  width: 150px;
+  float: left;
+  margin: 0px;
+}
+
+.filtro{
+  display: none;
+}

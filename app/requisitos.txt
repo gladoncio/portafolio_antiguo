@@ -1,0 +1,5 @@
+steamid-converter
+validators
+requests
+django-steamauth
+mysqlclient
